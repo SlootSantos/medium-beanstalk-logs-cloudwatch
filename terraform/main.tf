@@ -1,12 +1,12 @@
 terraform {
   backend "s3" {
-    bucket = "streaming-logs-test-tf-state"
-    region = "us-east-1"
+    bucket = "YOUR_STATE_BUCKET"
+    region = "YOUR_REGION"
     key    = "state"
   }
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = "YOUR_REGION"
 }
 
